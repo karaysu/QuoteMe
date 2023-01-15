@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The daily quote generator generates random quotes with relevant images based on your selected topics">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <title>Fetch me a quote | Random quotes and images based on tags</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="burger-btn"><div class="burger-btn__item burger-btn__item--trans"></div></div>
+        <header class="header">
+            <h1 class="header__primary">Your daily dose of <div class="header__moving"></div> quotes</h1>
+            <form class="form">
+                <div class="form__input">
+                    <input type="text" name="tag" id="tag" placeholder="Add tags here (3 to 10 characters)">
+                    <input type="submit" class="form__submit" value="Add">
+                </div>
+            </form>
+            <ul class="tags" >
+                <!-- Tags Injected here by JS -->
+            </ul>
+        </header>
+    
+        <main>
+            <section class="quote">
+                <blockquote class="quote__box">
+                    <!-- Quote Injected here by JS -->
+                </blockquote>
+
+                <div class="image-wrapper">
+                    <!-- Image Injected here by JS -->
+                </div>
+                <div title="Load New Data" class="quote__btn"> Reload <i class="fas fa-sync-alt"></i></div>
+                <div class="quote__tag">Relevant tag: <span></span></div>
+            </section>
+          
+        </main>
+        </hr>
+        </div>
+        <footer class="footer">
+            <!-- Attributions -->
+            <span style="z-index:50;font-size:0.9em;" class="footer__attribution">
+                <img src="http://api.paperquotes.com/static/images/paperquotes.png" height="20" width="20" alt="paperquotes.com"/>
+                <a target="_blank" href="http://paperquotes.com" title="Powered by quotes from paperquotes.com" style="color: #9fcc25; margin-left: 4px; vertical-align: middle;">paperquotes.com
+                </a>
+              </span>
+              <span class="footer__attribution"></span>
+        </footer>
+    <script src="./app/config.js"></script>
+    <script src="./app/app.js"></script>
+</body>
+</html>

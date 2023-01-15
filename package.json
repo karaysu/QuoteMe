@@ -1,0 +1,15 @@
+{
+  "name": "fetch me a quote",
+  "version": "1.0.0",
+  "description": "A random quote and image generator based on tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass ./css/sass/main.scss ./css/styles/main.css -w"
+  },
+  "author": "Umer Qasim <m.umerqasim@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
